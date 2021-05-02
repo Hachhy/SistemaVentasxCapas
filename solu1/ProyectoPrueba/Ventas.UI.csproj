@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ventas.BLL\Ventas.BLL.csproj">
+      <Project>{cb379a0a-cd9a-4ace-baca-61de38178f56}</Project>
+      <Name>Ventas.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ventas.Entities\Ventas.Entities.csproj">
+      <Project>{a77c54db-8bd2-4d85-b171-7355f0115b53}</Project>
+      <Name>Ventas.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
